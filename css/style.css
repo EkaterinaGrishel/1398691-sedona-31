@@ -1,0 +1,209 @@
+ /* Variables */
+
+ :root {
+     --basic-black: #000000;
+     --basic-extra-dark: #333333;
+     --basic-dark: #666666;
+     --basic-neutral: #f2f2f2;
+     --basic-extra-blue: #81B3D2;
+     --basic-extra-grey: #EEEEEE;
+     --basic-white: #ffffff;
+     --basic-white-transparent: rgb(255, 255, 255, 0.3);
+     --extra-white-transparent: rgb(255, 255, 255, 0.21);
+     --extra-dark-ransparent: rgba(0, 1, 1, 0.15);
+     --special-dark: #766357;
+     --special-grey: #EBEBEB;
+     --special-extra-grey: #E5E5E5;
+     --special-blue: #669EC0;
+     --special-extra-blue: #5496BD;
+ }
+
+ body {
+     min-width: 960px;
+     margin: 0;
+     padding: 0;
+     font-family: "PT Sans", Arial, sans-serif;
+     font-size: 14px;
+     line-height: 26px;
+     font-weight: 700;
+     color: var(--basic-black);
+     text-transform: uppercase;
+     background-color: var(--basic-white);
+     background-position: top center;
+     background-repeat: no-repeat;
+ }
+ /* Main navigation */
+
+ .main-navigation {
+     font-size: 14px;
+     line-height: 26px;
+ }
+
+ .site-navigation a {
+     text-decoration: none;
+     color: inherit;
+ }
+
+ .site-navigation li {
+     list-style: none;
+ }
+ /* Sedona-description */
+
+ .sedona-description {
+     background-image: url("../img/background-index.jpg");
+ }
+
+ .sedona-description h1 {
+     font-size: 21px;
+ }
+ /* Causes */
+
+ .causes h2 {
+     font-size: inherit;
+     color: var(--basic-extra-dark);
+ }
+
+ .causes-list {
+     list-style: none;
+ }
+
+ .causes-item h3 {
+     font-size: 21px;
+     line-height: 21px;
+ }
+
+ .causes-item p {
+     line-height: 21px;
+     color: var(--basic-extra-dark);
+ }
+
+ .causes-item-bg-color {
+     background-color: var(--basic-extra-blue);
+     color: var(--basic-white);
+ }
+
+ .causes-item-bg-color p {
+     color: var(--basic-white);
+ }
+
+ .causes-item-bg-color img {
+     width: 100%;
+ }
+
+ .causes-item.list-item {
+     list-style: none;
+ }
+
+ .causes-item-bg {
+     background-color: var(--basic-extra-grey);
+ }
+ /* Interested */
+
+ .interested h4 {
+     font-size: 30px;
+     line-height: 24px;
+ }
+
+ .interested p {
+     line-height: 24px;
+ }
+ /* Button */
+
+ .search-button {
+     font: inherit;
+     font-size: 21px;
+     line-height: 26px;
+     text-align: center;
+     color: var(--basic-white);
+     vertical-align: middle;
+     text-transform: uppercase;
+     background-color: var( --special-dark);
+     border: none;
+     width: 568px;
+     height: 86px;
+ }
+
+ .search-button:hover {
+     background-color: #604E43;
+ }
+
+ .search-button:active {
+     background-color: #503E33;
+     color: var(--basic-white-transparent);
+ }
+ /* Main-footer */
+
+ .footer-contacts,
+ .footer-phone {
+     text-transform: uppercase;
+     font-size: 21px;
+ }
+
+ .footer-phone {
+     text-decoration: none;
+     color: inherit;
+ }
+
+ .footer-social {
+     text-align: center;
+ }
+
+ .footer-social ul {
+     list-style: none;
+ }
+
+ .social-button {
+     text-decoration: none;
+     color: inherit;
+ }
+
+ .social-button svg {
+     border: 1px solid var(--basic-extra-blue);
+     background-color: var(--basic-extra-blue);
+ }
+ /* Modal */
+
+ .modal {
+     color: var(--basic-black);
+     background-color: var(---basic-white);
+     box-shadow: 0px 7px 15px var(--extra-dark-ransparent);
+ }
+
+ .date {
+     width: 346px;
+     height: 38px;
+ }
+
+ .modal-search select {
+     background-color: var(--basic-neutral);
+     border: none;
+ }
+
+ .modal-search select:hover {
+     background-color: var(--special-grey);
+ }
+
+ .modal-search select:focus {
+     background: var(--basic-white);
+     border: 2px solid var(--special-extra-grey);
+     outline: none;
+ }
+
+ .button-modal-search {
+     width: 458px;
+     height: 58px;
+     background-color: var(--basic-extra-blue);
+     border: none;
+     color: var(--basic-white);
+     font-size: 21px;
+     line-height: 26px;
+ }
+
+ .button-modal-search:hover {
+     background: var(--special-blue);
+ }
+
+ .button-modal-search:focus {
+     background: var(--special-extra-blue);
+     color: var(--extra-white-transparent);
+ }
