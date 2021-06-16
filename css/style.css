@@ -13,7 +13,9 @@
     --extra-white-transparent: rgb(255, 255, 255, 0.21);
     --extra-dark-ransparent: rgba(0, 1, 1, 0.15);
     --extra-grey: #BDBBBC;
+    --extra-dark: #503E33;
     --special-dark: #766357;
+    --special-extra-dark: #604E43;
     --special-grey: #EBEBEB;
     --special-extra-grey: #E5E5E5;
     --special-blue: #669EC0;
@@ -42,6 +44,20 @@
 }
 
 
+/* Inner-page*/
+
+.inner-page {
+    text-align: left;
+    min-width: 960px;
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+}
+
+
 /* Main navigation */
 
 .main-navigation {
@@ -64,7 +80,7 @@
     color: var(--basic-extra-blue);
 }
 
-.site-navigation a:focus {
+.site-navigation a:active {
     color: var(--basic-black-transparent);
 }
 
@@ -162,16 +178,20 @@
 }
 
 .search-button:hover {
-    background-color: #604E43;
+    background-color: var(--special-extra-dark);
 }
 
 .search-button:active {
-    background-color: #503E33;
+    background-color: var(--extra-dark);
     color: var(--basic-white-transparent);
 }
 
 
 /* Main-footer */
+
+.main-footer {
+    background: rgba(255, 255, 255, 0.9);
+}
 
 .footer-contacts,
 .footer-phone {
@@ -260,7 +280,149 @@
     background: var(--special-blue);
 }
 
-.button-modal-search:focus {
+.button-modal-search:active {
     background: var(--special-extra-blue);
     color: var(--extra-white-transparent);
+}
+
+
+/* Filter-houses */
+
+.filter-houses {
+    color: var(--basic-white);
+    text-transform: uppercase;
+    background-image: url("../img/background-catalog.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.filter-caption {
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 700;
+}
+
+.filter-list-item {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+}
+
+.filter-button {
+    color: inherit;
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 7px 35px 8px 36px;
+    border: 2px solid var(--basic-white);
+    box-sizing: border-box;
+    border-radius: 2px;
+    background: transparent;
+}
+
+.filter-button:hover {
+    background: var(--basic-white);
+    border: 2px solid var(--basic-white);
+    color: var(--basic-black);
+}
+
+
+/* Sort */
+
+.sort-caption {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+    color: var(--basic-black);
+}
+
+.sort-paragraph {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: var(--basic-black);
+}
+
+.sort-list {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: normal;
+    color: var(--basic-black-transparent);
+    border-bottom: 1px dashed var(--basic-extra-blue);
+}
+
+.sort-list:hover,
+.sort-list:focus {
+    color: var(--basic-extra-blue);
+}
+
+.sort-list:active {
+    color: var(--basic-black);
+}
+
+.sort-content-list li {
+    list-style: none;
+}
+
+.sort-content-list h3 {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+    color: var(--basic-black);
+}
+
+.sort-content-list h3:hover {
+    color: var(--basic-extra-blue);
+}
+
+.sort-content-list h3:active {
+    color: var(--basic-black-transparent);
+}
+
+.sort-content-paragraph {
+    color: var(--basic-extra-dark);
+}
+
+.sort-button {
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+    border: none;
+    color: var(--basic-white);
+    text-transform: uppercase;
+}
+
+.more-details.sort-button {
+    background-color: var(--basic-extra-blue);
+}
+
+.more-details.sort-button:hover {
+    background: var(--special-blue);
+}
+
+.more-details.sort-button:active {
+    background: var(--special-extra-blue);
+    color: var(--extra-white-transparent);
+}
+
+.reservation.sort-button {
+    background-color: var(--special-dark);
+}
+
+.reservation.sort-button:hover {
+    background-color: var(--special-extra-dark);
+}
+
+.reservation.sort-button:active {
+    background-color: var(--extra-dark);
+    color: var(--basic-white-transparent);
+}
+
+.sort-rating {
+    background-color: var(--basic-neutral);
+    padding: 3px 12px 3px 15px;
 }
