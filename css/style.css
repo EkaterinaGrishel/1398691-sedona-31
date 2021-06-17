@@ -44,20 +44,6 @@
 }
 
 
-/* Inner-page*/
-
-.inner-page {
-    text-align: left;
-    min-width: 960px;
-    margin: 0;
-    padding: 0;
-    font-family: "PT Sans", Arial, sans-serif;
-    font-size: 14px;
-    line-height: 21px;
-    font-weight: 400;
-}
-
-
 /* Main navigation */
 
 .main-navigation {
@@ -74,6 +60,10 @@
     color: inherit;
     margin: 0;
     padding: 0;
+}
+
+.site-navigation .active {
+    color: var(--special-dark);
 }
 
 .site-navigation a:hover {
@@ -294,6 +284,7 @@
     background-image: url("../img/background-catalog.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    text-align: left;
 }
 
 .filter-caption {
@@ -332,6 +323,10 @@
 
 /* Sort */
 
+.sort {
+    text-align: left;
+}
+
 .sort-caption {
     font-size: 21px;
     line-height: 26px;
@@ -346,7 +341,12 @@
     color: var(--basic-black);
 }
 
-.sort-list {
+.sort-list li {
+    list-style: none;
+}
+
+.sort-list-item a {
+    text-decoration: none;
     font-size: 12px;
     line-height: 18px;
     font-weight: normal;
@@ -354,13 +354,18 @@
     border-bottom: 1px dashed var(--basic-extra-blue);
 }
 
-.sort-list:hover,
-.sort-list:focus {
+.sort-list-item a:hover {
     color: var(--basic-extra-blue);
 }
 
-.sort-list:active {
+.sort-list-item a:focus {
+    color: var(--basic-extra-blue);
+    border: none;
+}
+
+.sort-list-item a:active {
     color: var(--basic-black);
+    border: none;
 }
 
 .sort-content-list li {
