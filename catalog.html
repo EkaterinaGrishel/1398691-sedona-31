@@ -36,7 +36,7 @@
         <main>
             <section class="filter-houses">
                 <h2>Фильтр жилья</h2>
-                <form class="filter-form" method="get" action="https://echo.htmlacademy.ru">
+                <form class="filter filter-form" method="get" action="https://echo.htmlacademy.ru">
                     <fieldset class="filter-infrastructure">
                         <legend class="filter-caption">Инфраструктура:</legend>
                         <ul class="filter-list">
@@ -93,7 +93,9 @@
 
                 <ul class="sort-content-list">
                     <li>
-                        <img src="img/amara.jpg" width="135" height="90" alt="Amara Resort & Spa">
+                        <div>
+                            <img src="img/amara.jpg" width="135" height="90" alt="Amara Resort & Spa">
+                        </div>
                         <h3>Amara Resort & Spa</h3>
                         <p class="sort-content-paragraph">Гостиница От 4000 ₽</p>
                         <p>
@@ -104,7 +106,9 @@
                     </li>
 
                     <li>
-                        <img src="img/desert.jpg" width="135" height="90" alt="Desert Quail Inn">
+                        <div>
+                            <img src="img/desert.jpg" width="135" height="90" alt="Desert Quail Inn">
+                        </div>
                         <h3>Desert Quail Inn</h3>
                         <p class="sort-content-paragraph">Мотель От 3000 ₽</p>
                         <p>
@@ -115,7 +119,9 @@
                     </li>
 
                     <li>
-                        <img src="img/villas.jpg" width="135" height="90" alt="Villas at Poco Diablo">
+                        <div>
+                            <img src="img/villas.jpg" width="135" height="90" alt="Villas at Poco Diablo">
+                        </div>
                         <h3>Villas at Poco Diablo</h3>
                         <p class="sort-content-paragraph">Апартаменты От 2000 ₽</p>
                         <p>
@@ -131,40 +137,41 @@
 
 
         <footer class="main-footer">
-            <p class="footer-contacts">#Visitsedona<br>
-                <a class="footer-phone" href="tel:+78005558628">+7 800 555-86-28</a>
-            </p>
-            <section class="footer-social">
-                <h4>Социальные сети</h4>
-                <ul>
-                    <li>
-                        <a class="social-button" href="#">
-                            <span>Twitter</span>
-                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div class="container">
+                <p class="footer-contacts">#Visitsedona<br>
+                    <a class="footer-phone" href="tel:+78005558628">+7 800 555-86-28</a>
+                </p>
+                <section class="footer-social">
+                    <h4>Социальные сети</h4>
+                    <ul>
+                        <li>
+                            <a class="social-button" href="#">
+                                <span>Twitter</span>
+                                <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M10.95 1.14409C12.635 0.648089 13.934 1.41409 14.527 2.32309C15.2 2.09209 15.858 1.84209 16.538 1.61509C16.5249 2.30145 16.2117 2.94761 15.681 3.38309C16.366 3.55309 16.985 2.89209 16.985 2.89209C16.816 3.89209 15.979 4.68009 15.422 4.91609C15.191 11.6661 12.247 16.1331 5.34498 15.9981H4.89898C4.48898 15.9981 0.734977 15.5381 0.000976562 14.1111C2.27198 14.3071 3.89398 13.6891 4.69398 12.9341C3.73398 12.6341 2.01498 12.4571 1.71498 9.98409C2.06398 10.0901 2.27898 10.2121 2.90498 10.1031C1.70498 9.24709 0.373977 8.53009 0.447977 6.33009C0.732977 6.65809 1.51498 6.86609 1.78798 6.80209C1.08498 6.56109 -0.182023 3.44209 0.893977 1.85009C2.71198 3.70409 4.62898 5.45609 8.04598 5.62309C8.25398 3.33009 9.18298 1.79309 10.95 1.14409Z" fill="white"/>
                     </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="social-button" href="#">
-                            <span>Facebook</span>
-                            <svg width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="social-button" href="#">
+                                <span>Facebook</span>
+                                <svg width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z" fill="white"/>
                     </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="social-button" href="#">
-                            <span>Youtube</span>
-                            <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="social-button" href="#">
+                                <span>Youtube</span>
+                                <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0H17C18.65 0 20 1.35 20 3V13C20 14.65 18.65 16 17 16H3C1.35 16 0 14.65 0 13V3C0 1.35 1.35 0 3 0ZM6.027 4.002V11.998L15.014 8L6.027 4.002Z" fill="white"/>
                       </svg>
-                        </a>
-                    </li>
-                </ul>
-            </section>
-            <p class="footer-copyright">Website by
-                <a class="button-copyright" href="https://htmlacademy.ru/intensive/htmlcss"><svg width="115" height="33" viewBox="0 0 115 33" xmlns="http://www.w3.org/2000/svg">
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+                <p class="footer-copyright">Website by
+                    <a class="button-copyright" href="https://htmlacademy.ru/intensive/htmlcss"><svg width="115" height="33" viewBox="0 0 115 33" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0 12.8691V15.4429H2.45789V12.8691H0Z" />
                 <path d="M11.6466 4.52562C10.0863 4.52562 8.82534 5.23341 8.03454 6.26294H7.94905V0H5.91864V15.4429H7.94905V10.1451C7.94905 8.02172 9.27418 6.49888 11.2191 6.49888C13.0572 6.49888 14.1258 7.87158 14.1258 9.71614V15.4429H16.1563V9.35153C16.1563 6.41308 14.3396 4.52562 11.6466 4.52562Z" />
                 <path d="M26.6171 4.82696H21.8082V1.07349H19.7778V4.82696H17.8542V6.80022H19.7778V12.7843C19.7778 14.5002 20.7396 15.4439 22.4708 15.4439H26.6171V13.4492H22.8769C22.193 13.4492 21.8082 13.0632 21.8082 12.3983V6.80022H26.6171V4.82696Z" />
@@ -178,7 +185,8 @@
                 <path d="M98.1985 17.8762C96.5713 17.8762 95.3295 18.6651 94.6443 19.9232H94.5799C93.9591 18.6865 92.8029 17.8762 91.2184 17.8762C89.8054 17.8762 88.7347 18.6225 88.0924 19.6673H88.0068V18.1534H86.0583V28.7079H88.0924V23.2921C88.0924 21.3091 89.1417 19.8592 90.7261 19.8165C92.2247 19.7739 93.1028 20.84 93.1028 22.4392V28.7079H95.1368V23.1215C95.1368 20.7547 96.5499 19.8165 97.7703 19.8165C99.2477 19.8165 100.125 20.84 100.125 22.4392V28.7079H102.16V22.226C102.16 19.6673 100.704 17.8762 98.1985 17.8762Z"/>
                 <path d="M109.441 27.0237L105.801 18.1536H103.553L108.392 29.7104L108.371 29.753C108.028 30.6272 107.643 30.947 106.701 30.947H104.196V32.9726H106.701C108.542 32.9726 109.527 32.1411 110.212 30.3499L114.88 18.1536H112.803L109.441 27.0237Z" />
                 </svg></a>
-            </p>
+                </p>
+            </div>
         </footer>
     </div>
 </body>
