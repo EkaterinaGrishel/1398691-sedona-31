@@ -441,6 +441,7 @@
     .sort-block {
         display: flex;
         align-items: center;
+        margin: 29px 73px 31px 73px;
         outline: 5px solid rgba(0, 255, 0, 0.3);
         outline-offset: -5px;
     }
@@ -453,6 +454,7 @@
 
     .sort-content-item {
         display: flex;
+        justify-content: space-between;
         outline: 5px solid rgba(0, 255, 255, 0.3);
         outline-offset: -5px;
     }
@@ -463,7 +465,8 @@
     }
 
     .sort-content-block {
-        width: 772px;
+        flex-grow: 1;
+        margin-right: 10px;
     }
 
     .sort-caption {
