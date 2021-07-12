@@ -586,8 +586,8 @@ border: none;
     text-align: center;
 }
 
-.button-plus,
-.button-minus {
+.button-minus,
+.button-plus {
     position: absolute;
     width: 38px;
     height: 38px;
@@ -595,29 +595,32 @@ border: none;
     border: none;
 }
 
-.button-minus {
+.button-plus {
     right: 0;
 }
 
-.button-plus::before {
+.button-minus::before {
     content: "";
     width: 10px;
     height: 1px;
-    border: solid 1px #A9A9A9;
+    border: 1px solid #A9A9A9;
+    background-color: #A9A9A9;
     position: absolute;
-    top: 20px;
-    left: 14px;
+    top: 17px;
+    left: 13px;
 }
 
-.button-plus:hover::before {
-    border: solid 1px var(--basic-black);
+.button-minus:hover::before {
+    border: 1px solid var(--basic-black);
+    background-color: var(--basic-black);
 }
 
-.button-plus:active::before {
-    border: solid 1px var(--basic-extra-blue);
+.button-minus:active::before {
+    border: 1px solid var(--basic-extra-blue);
+    background-color: var(--basic-extra-blue);
 }
 
-.button-minus::after {
+.button-plus::after {
     content: "+";
     font-size: 21px;
     color: #A9A9A9;
@@ -626,11 +629,11 @@ border: none;
     left: 12px;
 }
 
-.button-minus:hover:after {
+.button-plus:hover:after {
     color: var(--basic-black);
 }
 
-.button-minus:active:after {
+.button-plus:active:after {
     color: var(--basic-extra-blue);
 }
 
