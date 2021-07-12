@@ -560,10 +560,11 @@ border: none;
     display: inline;
     border: none;
     position: absolute;
-    top: 7px;
-    right: 7px;
+    top: 8px;
+    right: 8px;
     margin: 0;
     padding: 0;
+    background: transparent;
 }
 
 .button-calendar path:hover {
@@ -575,7 +576,7 @@ border: none;
 }
 
 .date {
-    width: 345px;
+    width: 346px;
     margin: 0;
     padding: 6px 214px 6px 15px;
 }
@@ -593,6 +594,7 @@ border: none;
     height: 38px;
     text-align: center;
     border: none;
+    background: transparent;
 }
 
 .button-plus {
@@ -601,23 +603,20 @@ border: none;
 
 .button-minus::before {
     content: "";
-    width: 10px;
-    height: 1px;
-    border: 1px solid #A9A9A9;
-    background-color: #A9A9A9;
+    width: 12px;
+    height: 3px;
     position: absolute;
-    top: 17px;
-    left: 13px;
+    background: #A9A9A9;
+    top: 19px;
+    left: 14px;
 }
 
 .button-minus:hover::before {
-    border: 1px solid var(--basic-black);
-    background-color: var(--basic-black);
+    background: var(--basic-black);
 }
 
 .button-minus:active::before {
-    border: 1px solid var(--basic-extra-blue);
-    background-color: var(--basic-extra-blue);
+    background: var(--basic-extra-blue);
 }
 
 .button-plus::after {
@@ -625,8 +624,8 @@ border: none;
     font-size: 21px;
     color: #A9A9A9;
     position: absolute;
-    top: 7px;
-    left: 12px;
+    top: 8px;
+    left: 14px;
 }
 
 .button-plus:hover:after {
