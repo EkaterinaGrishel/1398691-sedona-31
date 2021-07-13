@@ -13,6 +13,7 @@
     --extra-white-transparent: rgb(255, 255, 255, 0.21);
     --extra-dark-ransparent: rgba(0, 1, 1, 0.15);
     --extra-grey: #BDBBBC;
+    --extra-light-gray: #A9A9A9;
     --extra-dark: #503E33;
     --special-dark: #766357;
     --special-extra-dark: #604E43;
@@ -440,6 +441,10 @@ border: none;
     line-height: 26px;
 }
 
+.footer-catalog {
+    position: static;
+}
+
 
 /* Social button */
 
@@ -531,11 +536,12 @@ border: none;
 
 .modal-search input {
     background-color: var(--basic-neutral);
+    border-color: var(--basic-neutral);
     color: var(--basic-black);
-    border: none;
+    border: 2px solid var(--basic-neutral);
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 14px;
-    line-height: 26px;
+    line-height: 22px;
     font-weight: 700;
     text-transform: uppercase;
     box-sizing: border-box;
@@ -565,13 +571,14 @@ border: none;
     margin: 0;
     padding: 0;
     background: transparent;
+    fill: var(--extra-light-gray);
 }
 
-.button-calendar path:hover {
+.button-calendar:hover path {
     fill: var(--basic-black);
 }
 
-.button-calendar path:active {
+.button-calendar:active path {
     fill: var(--basic-extra-blue);
 }
 
@@ -979,6 +986,7 @@ ul.sort-content-list {
     line-height: 26px;
     font-weight: bold;
     color: var(--basic-black);
+    margin: 0;
     margin-right: 46px;
 }
 
