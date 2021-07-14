@@ -445,6 +445,11 @@ border: none;
     position: static;
 }
 
+footer .container {
+    box-shadow: none;
+    box-shadow: 0 0 2px var(--special-extra-grey);
+}
+
 
 /* Social button */
 
@@ -993,43 +998,6 @@ ul.sort-content-list {
 .star-one {
     width: 21px;
 }
-
-
-/*
-
-.sort-content-item:first-child:before {
-    content: "";
-    position: absolute;
-    right: 73px;
-    background-image: url("../img/star_four.svg");
-    background-repeat: no-repeat;
-    color: var(--basic-extra-blue);
-    width: 91px;
-    height: 17px;
-}
-
-.sort-content-item:nth-child(2):before {
-    content: "";
-    position: absolute;
-    right: 73px;
-    background-image: url("../img/star_three.svg");
-    background-repeat: no-repeat;
-    color: var(--basic-extra-blue);
-    width: 66px;
-    height: 17px;
-}
-
-.sort-content-item:nth-child(3):before {
-    content: "";
-    position: absolute;
-    right: 73px;
-    background-image: url("../img/star_two.svg");
-    background-repeat: no-repeat;
-    color: var(--basic-extra-blue);
-    width: 42px;
-    height: 17px;
-}
-*/
 
 .sort-content-block {
     flex-grow: 1;
