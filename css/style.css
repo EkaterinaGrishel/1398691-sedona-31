@@ -686,7 +686,7 @@ border: none;
     background-repeat: no-repeat;
     background-size: cover;
     text-align: left;
-    padding: 26px 73px 32px 72px;
+    padding: 26.5px 73px 31px 72px;
 }
 
 .filter fieldset {
@@ -736,6 +736,7 @@ border: none;
     box-sizing: border-box;
     border-radius: 2px;
     background: transparent;
+    justify-self: center;
 }
 
 .filter-button:hover {
@@ -746,7 +747,7 @@ border: none;
 
 .filter {
     display: grid;
-    grid-template-columns: 280px 1fr 1fr;
+    grid-template-columns: 250px 480px 1fr;
     align-content: start;
 }
 
@@ -761,10 +762,6 @@ border: none;
     width: 220px;
 }
 
-.filter-button {
-    justify-self: center;
-}
-
 .filter-option label {
     position: relative;
     display: block;
@@ -772,25 +769,47 @@ border: none;
     user-select: none;
 }
 
+.filter-input-checkbox:checked+label::before {
+    content: "";
+    position: absolute;
+    left: -42px;
+    top: 0;
+    width: 27px;
+    height: 23px;
+    background-image: url("../img/Shape.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
 .filter-input-checkbox+label::before {
     content: "";
     position: absolute;
     left: -42px;
     top: 0;
-    width: 21px;
-    height: 21px;
-    border: 2px solid #ffffff;
+    width: 27px;
+    height: 23px;
+    background-image: url("../img/checkbox-off.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.filter-infrastructure input:disabled+label::before {
+    background-image: url("../img/checkbox-off-disabled.svg");
 }
 
 .filter-input-checkbox:checked+label::after {
     content: "";
     position: absolute;
     left: -37px;
-    width: 23px;
-    height: 17px;
+    width: 27px;
+    height: 23px;
     background-image: url("../img/check_mark.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
+}
+
+.filter-type-of-housing input:disabled+label::before {
+    background-image: url("../img/checkbox-on-disabled.svg");
 }
 
 .range-caption {
@@ -859,14 +878,12 @@ border: none;
 
 .sort {
     text-align: left;
-    padding: 0;
-    margin: 0;
 }
 
 .sort-block {
     display: flex;
     align-items: center;
-    margin: 29px 73px 31px 73px;
+    padding: 29px 73px 31px 73px;
 }
 
 .sort-list {
@@ -941,7 +958,44 @@ ul.sort-content-list {
     display: flex;
     justify-content: space-between;
     position: relative;
+    list-style: none;
+    margin: 0;
+    box-shadow: 0 0 2px var(--special-extra-grey);
 }
+
+.star {
+    content: "";
+    position: absolute;
+    top: 15px;
+    right: 73px;
+    background-image: url("../img/star_four.svg");
+    background-repeat: repeat-x;
+    color: var(--basic-extra-blue);
+    height: 17px;
+}
+
+.star-five {
+    width: 116px;
+}
+
+.star-four {
+    width: 92px;
+}
+
+.star-tree {
+    width: 66px;
+}
+
+.star-two {
+    width: 42px;
+}
+
+.star-one {
+    width: 21px;
+}
+
+
+/*
 
 .sort-content-item:first-child:before {
     content: "";
@@ -975,10 +1029,12 @@ ul.sort-content-list {
     width: 42px;
     height: 17px;
 }
+*/
 
 .sort-content-block {
     flex-grow: 1;
     margin-right: 10px;
+    margin-top: 23.5px;
 }
 
 .sort-caption {
@@ -995,13 +1051,15 @@ ul.sort-content-list {
     line-height: 18px;
     font-weight: 400;
     color: var(--basic-black);
+    padding: 0;
+    margin: 0;
     margin-right: 40px;
 }
 
 .sort-content-paragraph b:first-child {
     display: inline-block;
     width: 115px;
-    margin-right: 6px;
+    margin-right: 2px;
 }
 
 .sort-rating {
@@ -1011,38 +1069,37 @@ ul.sort-content-list {
     line-height: 21px;
     color: var(--basic-dark);
     align-self: flex-end;
-}
-
-.sort-content-item {
-    list-style: none;
-    padding: 30px 73px;
-    margin: 0;
-    border-top: 1px solid var(--special-extra-grey);
+    margin: 0 73px 30px 0;
 }
 
 .sort-content-img {
     margin-right: 29px;
     max-width: 135px;
     height: 90px;
+    margin: 30px 29px 30px 73px;
 }
 
 .sort-content-img img {
     width: 100%;
 }
 
-.sort-content-list h3 {
+.sort-content-block a {
+    display: inline-block;
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
+    font-style: normal;
     color: var(--basic-black);
     margin: 0;
+    padding: 0;
+    text-decoration: none;
 }
 
-.sort-content-list h3:hover {
+.sort-content-block a:hover {
     color: var(--basic-extra-blue);
 }
 
-.sort-content-list h3:active {
+.sort-content-block a:active {
     color: var(--basic-black-transparent);
 }
 
@@ -1066,7 +1123,7 @@ ul.sort-content-list {
 .more-details.sort-button {
     background-color: var(--basic-extra-blue);
     padding: 3px 16px 3px 17px;
-    margin-right: 6px;
+    margin-right: 3px;
 }
 
 .more-details.sort-button:hover {
