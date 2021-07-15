@@ -447,7 +447,7 @@ border: none;
 
 footer .container {
     box-shadow: none;
-    box-shadow: 0 0 2px var(--special-extra-grey);
+    border-top: 1px solid var(--special-extra-grey);
 }
 
 
@@ -817,10 +817,6 @@ footer .container {
     background-image: url("../img/checkbox-on-disabled.svg");
 }
 
-.range-caption {
-    margin-bottom: 10px;
-}
-
 .price-controls {
     width: 317px;
     height: 36px;
@@ -834,14 +830,32 @@ footer .container {
     margin: 0;
 }
 
-.price-controls b:not(:last-child)::after {
+.price-controls input {
+    background-color: transparent;
+    border: none;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: var(--basic-white);
+    text-transform: uppercase;
+}
+
+.price-controls input::placeholder {
+    color: var(--basic-white);
+    text-transform: uppercase;
+}
+
+.price-controls::after {
     content: " ";
     position: absolute;
     top: 5px;
-    margin-left: 70px;
     width: 2px;
     height: 20px;
     background: var(--basic-white);
+}
+
+.range-caption {
+    margin-bottom: 10px;
 }
 
 .range-controls {
@@ -896,11 +910,17 @@ footer .container {
 }
 
 .sort-dir {
-    margin-left: 503px;
+    margin-left: 509px;
+    margin-top: 3px;
+}
+
+.sort-dir a {
+    margin: 0;
+    padding: 0;
 }
 
 .sort-dir a:first-child {
-    margin-right: 12px;
+    margin-right: 9px;
 }
 
 .icon-up-dir path:hover,
@@ -965,38 +985,7 @@ ul.sort-content-list {
     position: relative;
     list-style: none;
     margin: 0;
-    box-shadow: 0 0 2px var(--special-extra-grey);
-}
-
-.star {
-    content: "";
-    position: absolute;
-    top: 15px;
-    right: 73px;
-    background-image: url("../img/star_four.svg");
-    background-repeat: repeat-x;
-    color: var(--basic-extra-blue);
-    height: 17px;
-}
-
-.star-five {
-    width: 116px;
-}
-
-.star-four {
-    width: 92px;
-}
-
-.star-tree {
-    width: 66px;
-}
-
-.star-two {
-    width: 42px;
-}
-
-.star-one {
-    width: 21px;
+    border-top: 1px solid var(--special-extra-grey);
 }
 
 .sort-content-block {
@@ -1036,8 +1025,7 @@ ul.sort-content-list {
     font-weight: 400;
     line-height: 21px;
     color: var(--basic-dark);
-    align-self: flex-end;
-    margin: 0 73px 30px 0;
+    margin: 0;
 }
 
 .sort-content-img {
@@ -1049,18 +1037,6 @@ ul.sort-content-list {
 
 .sort-content-img img {
     width: 100%;
-}
-
-.sort-content-block a {
-    display: inline-block;
-    font-size: 21px;
-    line-height: 26px;
-    font-weight: bold;
-    font-style: normal;
-    color: var(--basic-black);
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
 }
 
 .sort-content-block a:hover {
@@ -1078,7 +1054,8 @@ ul.sort-content-list {
     font-weight: 400;
 }
 
-.sort-button {
+.sort-link {
+    text-decoration: none;
     font-family: inherit;
     font-weight: bold;
     font-size: 14px;
@@ -1088,31 +1065,79 @@ ul.sort-content-list {
     text-transform: uppercase;
 }
 
-.more-details.sort-button {
+.star-rating {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 29px 73px 30px 0
+}
+
+.star {
+    content: "";
+    background-image: url("../img/star_four.svg");
+    background-repeat: repeat-x;
+    color: var(--basic-extra-blue);
+    height: 17px;
+    margin: 0 0 48px;
+}
+
+.star-five {
+    width: 116px;
+}
+
+.star-four {
+    width: 92px;
+}
+
+.star-tree {
+    width: 66px;
+}
+
+.star-two {
+    width: 42px;
+}
+
+.star-one {
+    width: 21px;
+}
+
+.hotel-name {
+    display: inline-block;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+    font-style: normal;
+    color: var(--basic-black);
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.more-details.sort-link {
     background-color: var(--basic-extra-blue);
     padding: 3px 16px 3px 17px;
     margin-right: 3px;
 }
 
-.more-details.sort-button:hover {
+.more-details.sort-link:hover {
     background: var(--special-blue);
 }
 
-.more-details.sort-button:active {
+.more-details.sort-link:active {
     background: var(--special-extra-blue);
     color: var(--extra-white-transparent);
 }
 
-.reservation.sort-button {
+.reservation.sort-link {
     background-color: var(--special-dark);
     padding: 3px 17px 3px 16px;
 }
 
-.reservation.sort-button:hover {
+.reservation.sort-link:hover {
     background-color: var(--special-extra-dark);
 }
 
-.reservation.sort-button:active {
+.reservation.sort-link:active {
     background-color: var(--extra-dark);
     color: var(--basic-white-transparent);
 }
