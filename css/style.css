@@ -18,6 +18,8 @@
     --special-dark: #766357;
     --special-extra-dark: #604E43;
     --special-grey: #EBEBEB;
+    --special-neutral: #cfcfcf;
+    --special-extre-neutral: #ababab;
     --special-extra-grey: #E5E5E5;
     --special-blue: #669EC0;
     --special-extra-blue: #5496BD;
@@ -359,10 +361,9 @@
     position: relative;
 }
 
-
-/* iframe {
-border: none;
-} */
+iframe {
+    border: none;
+}
 
 
 /* Main-footer */
@@ -519,6 +520,7 @@ footer .container {
 .modal-search label {
     display: inline-block;
     color: var(--basic-black);
+    vertical-align: auto;
     text-align: left;
     margin-right: 10px;
 }
@@ -553,7 +555,7 @@ footer .container {
 }
 
 .modal-search input::placeholder {
-    color: #000000;
+    color: var(--basic-black);
     font-size: 14px;
     line-height: 21;
     font-weight: bold;
@@ -618,7 +620,7 @@ footer .container {
     width: 12px;
     height: 3px;
     position: absolute;
-    background: #A9A9A9;
+    background: var(--extra-light-gray);
     top: 19px;
     left: 14px;
 }
@@ -634,7 +636,7 @@ footer .container {
 .button-plus::after {
     content: "+";
     font-size: 21px;
-    color: #A9A9A9;
+    color: var(--extra-light-gray);
     position: absolute;
     top: 8px;
     left: 14px;
@@ -781,7 +783,7 @@ footer .container {
     top: 0;
     width: 27px;
     height: 23px;
-    background-image: url("../img/Shape.svg");
+    background-image: url("../img/shape.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
 }
@@ -820,7 +822,7 @@ footer .container {
 .price-controls {
     width: 317px;
     height: 36px;
-    border: 2px solid #FFFFFF;
+    border: 2px solid var(--basic-white);
     box-sizing: border-box;
     border-radius: 2px;
     display: flex;
@@ -882,10 +884,10 @@ footer .container {
     width: 5px;
     height: 5px;
     padding: 0;
-    border: 8px solid #ffffff;
-    background-color: #ababab;
+    border: 8px solid var(--basic-white);
+    background-color: var(--special-extre-neutral);
     border-radius: 50%;
-    box-shadow: 0 2px 1px 0 #cfcfcf;
+    box-shadow: 0 2px 1px 0 var(--special-neutral);
 }
 
 .range-controls .toggle:hover {
@@ -1015,6 +1017,7 @@ ul.sort-content-list {
 
 .sort-content-paragraph b:first-child {
     display: inline-block;
+    vertical-align: middle;
     width: 115px;
     margin-right: 2px;
 }
@@ -1039,11 +1042,11 @@ ul.sort-content-list {
     width: 100%;
 }
 
-.sort-content-block a:hover {
+.hotel-name:hover {
     color: var(--basic-extra-blue);
 }
 
-.sort-content-block a:active {
+.hotel-name:active {
     color: var(--basic-black-transparent);
 }
 
@@ -1103,6 +1106,7 @@ ul.sort-content-list {
 
 .hotel-name {
     display: inline-block;
+    vertical-align: middle;
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
@@ -1113,31 +1117,32 @@ ul.sort-content-list {
     text-decoration: none;
 }
 
-.more-details.sort-link {
+.more-details {
     background-color: var(--basic-extra-blue);
     padding: 3px 16px 3px 17px;
     margin-right: 3px;
 }
 
-.more-details.sort-link:hover {
+.more-details:hover {
     background: var(--special-blue);
 }
 
-.more-details.sort-link:active {
+.more-details:active {
     background: var(--special-extra-blue);
     color: var(--extra-white-transparent);
 }
 
-.reservation.sort-link {
+.reservation {
     background-color: var(--special-dark);
     padding: 3px 17px 3px 16px;
 }
 
-.reservation.sort-link:hover {
+.reservation:hover {
     background-color: var(--special-extra-dark);
+    color: var(--extra-white-transparent);
 }
 
-.reservation.sort-link:active {
+.reservation:active {
     background-color: var(--extra-dark);
     color: var(--basic-white-transparent);
 }
